@@ -40,8 +40,11 @@ const tenLetterWords = [
 
 function hangman(guessedLetters, wordToGuess) {
   const showUser = [];
+  wordToGuess = wordToGuess.toLowerCase();
 
-  for (let char of wordToGuess) {
+  for (let i = 0; i < wordToGuess.length; i++) {
+    const char = wordToGuess[i];
+
     if (guessedLetters.includes(char)) {
       showUser.push(char);
     } else {
