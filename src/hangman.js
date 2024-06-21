@@ -38,14 +38,6 @@ const tenLetterWords = [
   "assignment",
 ];
 
-// function isALetter(letter) {
-//   if ((letter >= "a" && letter <= "z") || (letter >= "A" && letter <= "Z")) {
-//     return true;
-//   } else {
-//     return false;
-//   }
-// }
-
 function hangman(guessedLetters, wordToGuess) {
   const showUser = [];
 
